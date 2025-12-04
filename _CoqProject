@@ -1,7 +1,8 @@
 -docroot docs
 -R theories LogicalPinning
-# -R cfml/lib/coq/ CFML
-# -R cfml/lib/stdlib/ CFML.Stdlib
+-R lib/tlc/src TLC
+-R lib/cfml/lib/coq/ CFML
+-R lib/cfml/lib/stdlib/ CFML.Stdlib
 
 theories/Lib/WPUntyped.v
 theories/Lib/Borrowable.v
