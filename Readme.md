@@ -1,5 +1,11 @@
 # Precise Reasoning about Container-Internal Pointers with Logical Pinning
 
+This artifact contains the mechanized formalization accompanying the article *Precise Reasoning about Container-Internal Pointers with Logical Pinning*. It provides:
+- The complete Rocq development of the logical pinning model;
+- The mechanized formalization of all case studies and examples stated in the paper, illustrating the application of the model and proof discipline;
+- A reproducible build environment based on opam;
+- Guide on how to compile the development and navigate the code structure.
+
 ## Contents
 
 The following are the most interesting parts of the development:
