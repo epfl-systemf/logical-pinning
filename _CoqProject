@@ -1,0 +1,26 @@
+-docroot docs
+-R theories LogicalPinning
+# -R cfml/lib/coq/ CFML
+# -R cfml/lib/stdlib/ CFML.Stdlib
+
+theories/Lib/WPUntyped.v
+theories/Lib/Borrowable.v
+theories/Lib/ValOps.v
+theories/Lib/MRecord.v
+theories/Lib/Stdlib.v
+
+theories/Examples/Lists/LibBare/List.v
+theories/Examples/Lists/LibBare/ListExec.v
+theories/Examples/Lists/List_impl.v
+theories/Examples/Lists/ListE_API.v
+theories/Examples/Lists/LibBStruct/List.v
+theories/Examples/Lists/ListES_API.v
+
+theories/Examples/Trees/LibBare/Tree.v
+theories/Examples/Trees/LibBare/TreeExec.v
+theories/Examples/Trees/Tree_impl.v
+theories/Examples/Trees/Tree_API.v
+theories/Examples/Trees/TreeE_API.v
+theories/Examples/Trees/LibBStruct/Tree.v
+theories/Examples/Trees/TreeS_API.v
+theories/Examples/Trees/TreeES_API.v

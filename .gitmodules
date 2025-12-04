@@ -1,0 +1,6 @@
+[submodule "lib/cfml"]
+	path = lib/cfml
+	url = git@github.com:yawen-guan/cfml.git
+[submodule "lib/tlc"]
+	path = lib/tlc
+	url = git@github.com:charguer/tlc.git

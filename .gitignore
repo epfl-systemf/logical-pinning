@@ -1,0 +1,36 @@
+# COQ
+*.vo
+*.vok
+*.vos
+*.vio
+*.glob
+.*.aux
+.lia.cache
+
+# Caml
+*.a
+*.cma
+*.cmi
+*.cmo
+*.cmx
+*.cmxa
+*.cmxs
+*.native
+*.o
+
+# CFML
+*.cmj
+*_ml.v
+.depend_*
+.coq_error
+_output
+
+# direnv
+.direnv
+
+# coq_makefile
+# **/*Makefile
+# **/*Makefile.conf
+**/*.Makefile.d
+
+.install_done
