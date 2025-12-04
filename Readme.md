@@ -44,15 +44,22 @@ The following are the most interesting parts of the development:
 
 ### Automatic Setup
 
-Run our provided build script `run.sh`.
+You can run our provided build script `run.sh`. This script will:
+- create a new opam switch called "lp";
+- install all dependencies and compile them;
+- compile our development.
+
+At the end of running the script (this can take several minutes), if everything succeeded you should see the following line: "[logical-pinning] Compiled all proofs.".
+
+This build script is tested on Ubuntu 24.04. For other platforms, please refer to the manual setup.
 
 ### Manual Setup
 
-This artifact depends on the [Equations](https://github.com/mattam82/Coq-Equations) plugin as well as the [CFML](https://github.com/charguer/cfml.git) and [TLC](https://github.com/charguer/tlc.git) libraries.  We have tested it with Coq 8.20.1 built with OCaml 4.14.1.  We recommend creating a clean OPAM switch for testing purposes:
+This artifact depends on the [Equations](https://github.com/mattam82/Coq-Equations) plugin as well as the [CFML](https://github.com/charguer/cfml.git) and [TLC](https://github.com/charguer/tlc.git) libraries.  We have tested it with Coq 8.20.1 built with OCaml 4.14.2.  We recommend creating a clean OPAM switch for testing purposes:
 
 ```
 opam update
-opam switch create lp ocaml-base-compiler.4.14.1
+opam switch create lp ocaml-base-compiler.4.14.2
 eval $(opam env --switch=lp --set-switch)
 ```
 
@@ -92,6 +99,8 @@ CFML and TLC are not hosted on OPAM, so they must be built manually.  We have in
    make -C cfml depend
    make -C cfml -j libcoq stdlib
    ```
+
+We have tested the above commands on Ubuntu 24.04. For other platforms, please consult the links provided above for each package.
 
 ### Compiling this artifact
 
