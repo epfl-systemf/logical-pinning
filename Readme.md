@@ -55,7 +55,7 @@ This build script is tested on Ubuntu 24.04. For other platforms, please refer t
 
 ### Manual Setup
 
-This artifact depends on the [Equations](https://github.com/mattam82/Coq-Equations) plugin as well as the [CFML](https://github.com/charguer/cfml.git) and [TLC](https://github.com/charguer/tlc.git) libraries.  We have tested it with Coq 8.20.1 built with OCaml 4.14.2.  We recommend creating a clean OPAM switch for testing purposes:
+This artifact depends on the [Equations](https://github.com/mattam82/Coq-Equations) plugin, the [TLC](https://github.com/charguer/tlc.git) library and a [variant](https://github.com/yawen-guan/cfml.git) of the [CFML](https://github.com/charguer/cfml.git) library.  We have tested it with Coq 8.20.1 built with OCaml 4.14.2.  We recommend creating a clean OPAM switch for testing purposes:
 
 ```
 opam update
